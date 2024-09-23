@@ -26,7 +26,7 @@ contract EIP712Example {
         ));
     }
 
-    function hashMessage(Message memory message) public pure returns (bytes32) {
+    function hashMessage(Message memory message) internal pure returns (bytes32) {
         return keccak256(abi.encode(
             MESSAGE_TYPEHASH,
             message.sender,

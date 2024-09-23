@@ -1,4 +1,5 @@
 .deps
 .states
+.deploys
 contracts/artifacts
 node_modules/
